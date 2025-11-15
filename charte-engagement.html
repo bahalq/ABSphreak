@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ميثاق الالتزام - تطوير المواقع الإلكترونية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            color: #667eea;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #4a5568;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .value-card h2 {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .value-card ul {
+            list-style: none;
+        }
+
+        .value-card li {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 12px 0;
+            padding: 18px 25px;
+            border-radius: 10px;
+            color: #2d3748;
+            font-size: 1.15em;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            padding-right: 45px;
+        }
+
+        .value-card li:hover {
+            background: white;
+            transform: translateX(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .value-card li::before {
+            content: "✓";
+            position: absolute;
+            right: 15px;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #4a5568;
+            font-size: 1em;
+        }
+
+        .footer .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            .value-card {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 ميثاق الالتزام المهني</h1>
+            <div class="subtitle">تطوير المواقع الإلكترونية</div>
+            <p>التزامنا بالتميز والقيم الأخلاقية في كل مشروع نقوم به</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- لله -->
+            <div class="value-card">
+                <h2>🤲 لله</h2>
+                <ul>
+                    <li>الصدق</li>
+                    <li>النزاهة</li>
+                    <li>النية الصافية</li>
+                    <li>احترام الأمانة</li>
+                </ul>
+            </div>
+
+            <!-- للعميل -->
+            <div class="value-card">
+                <h2>👤 للعميل</h2>
+                <ul>
+                    <li>الجودة</li>
+                    <li>الوضوح</li>
+                    <li>المسؤولية</li>
+                    <li>الاحترام</li>
+                </ul>
+            </div>
+
+            <!-- للمجتمع -->
+            <div class="value-card">
+                <h2>🌍 للمجتمع</h2>
+                <ul>
+                    <li>الخدمة النافعة</li>
+                    <li>الأثر الإيجابي</li>
+                    <li>احترام البيئة</li>
+                    <li>دعم المبادرات الجادة</li>
+                </ul>
+            </div>
+
+            <!-- للموردين -->
+            <div class="value-card">
+                <h2>🤝 للموردين</h2>
+                <ul>
+                    <li>العدل</li>
+                    <li>احترام الاتفاق</li>
+                    <li>المصداقية</li>
+                    <li>التعامل بكرامة</li>
+                </ul>
+            </div>
+
+            <!-- للعمال (المستقبل) -->
+            <div class="value-card">
+                <h2>👥 للعمال (المستقبل)</h2>
+                <ul>
+                    <li>الإنصاف</li>
+                    <li>الحقوق</li>
+                    <li>الإنسانية</li>
+                    <li>التطوير</li>
+                </ul>
+            </div>
+
+            <!-- للشركاء -->
+            <div class="value-card">
+                <h2>🤲 للشركاء</h2>
+                <ul>
+                    <li>الشفافية</li>
+                    <li>المشاورة</li>
+                    <li>الالتزام</li>
+                    <li>الثقة</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>هذا الميثاق يمثل التزامنا الأخلاقي والمهني تجاه جميع الأطراف المعنية</p>
+            <p class="signature">نلتزم بهذه القيم في كل خطوة من رحلتنا المهنية</p>
+        </div>
+    </div>
+</body>
+</html>
